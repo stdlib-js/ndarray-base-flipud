@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/ndarray-base-flipud
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var flipud = require( '@stdlib/ndarray-base-flipud' );
+import flipud from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flipud@esm/index.mjs';
 ```
 
 #### flipud( x, writable )
@@ -76,8 +60,8 @@ var flipud = require( '@stdlib/ndarray-base-flipud' );
 Returns a view of an input ndarray in which the order of elements along the second-to-last dimension is reversed.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray-ctor' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
+import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@esm/index.mjs';
+import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
 
 var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 var shape = [ 3, 2 ];
@@ -133,11 +117,16 @@ The function accepts the following arguments:
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var array = require( '@stdlib/ndarray-array' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-var zeroTo = require( '@stdlib/array-base-zero-to' );
-var flipud = require( '@stdlib/ndarray-base-flipud' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
+import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
+import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@esm/index.mjs';
+import flipud from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-flipud@esm/index.mjs';
 
 // Create a linear ndarray buffer:
 var buf = zeroTo( 16 );
@@ -153,6 +142,10 @@ var y = flipud( x, false );
 
 var a = ndarray2array( y );
 // returns [ [ [ 6, 7 ], [ 4, 5 ], [ 2, 3 ], [ 0, 1 ] ], [ [ 14, 15 ], [ 12, 13 ], [ 10, 11 ], [ 8, 9 ] ] ]
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -184,7 +177,7 @@ var a = ndarray2array( y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
