@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`302f85f`](https://github.com/stdlib-js/stdlib/commit/302f85fd95665bfac64102e17641dc54eb59898f) - **test:** use functional accessors and update examples _(by Athan Reines)_
 -   [`da6ecc9`](https://github.com/stdlib-js/stdlib/commit/da6ecc96d7f503e03007eef616703fc7a71587b8) - **chore:** fix JavaScript lint errors [(#9572)](https://github.com/stdlib-js/stdlib/pull/9572) _(by Shreelaxmi Hegde, Athan Reines)_
 
 </details>
